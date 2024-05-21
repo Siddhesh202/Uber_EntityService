@@ -35,4 +35,10 @@ public class Booking extends BaseModel {
 
     private Long totalDistance;
 
+    @OneToOne
+    private ExactLocation startLocation;
+
+    @OneToOne
+    private ExactLocation endLocation;
+
 }
